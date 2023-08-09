@@ -18,7 +18,7 @@ function FeedbackStats({ feedback }) {
   );
 }
 
-FeedbackStats.PropTypes = {
+FeedbackStats.propTypes = {
   feedback: PropTypes.array.isRequired,
 };
 
