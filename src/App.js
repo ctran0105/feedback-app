@@ -5,6 +5,7 @@ import FeedbackList from "./components/FeedbackList";
 import FeedbackData from "./data/FeedbackData";
 import FeedbackStats from "./components/FeedbackStats";
 import FeedbackForm from "./components/FeedbackForm";
+import RatingSelect from "./components/RatingSelect";
 
 
 function App() {
