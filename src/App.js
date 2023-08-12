@@ -1,5 +1,4 @@
 // This contains main app components
-import { v4 as uuidv4 } from "uuid";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import Header from "./components/Header";
@@ -13,10 +12,6 @@ import { FeedbackProvider } from "./context/FeedbackContext";
 
 function App() {
   const [feedback, setFeedback] = useState(FeedbackData);
-  const addFeedback = (newFeedback) => {
-    newFeedback.id = uuidv4();
-    setFeedback([newFeedback, ...feedback]);
-  };
 
   return (
     <FeedbackProvider>
